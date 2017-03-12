@@ -7,7 +7,7 @@ const AlarmList = ({ alarms = [] }) => {
 
   return (
     <ul>
-      {alarms.map(alarm => <li>{alarm}</li>)}
+      {alarms.map(alarm => <li key={alarm}>{alarm}</li>)}
     </ul>
   );
 };
