@@ -5,7 +5,7 @@ import {
   Link
 } from 'react-router-dom';
 
-import AlarmList from './components/AlarmList';
+import AlarmsPage from './containers/AlarmsPage';
 import About from './components/About';
 import './App.css';
 
@@ -21,7 +21,7 @@ class App extends Component {
 
           <hr/>
 
-          <Route exact path="/" component={AlarmList} />
+          <Route exact path="/" component={AlarmsPage} />
           <Route path="/about" component={About} />
         </div>
       </Router>
