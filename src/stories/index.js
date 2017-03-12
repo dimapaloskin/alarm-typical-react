@@ -19,9 +19,16 @@ storiesOf('Button', module)
   ));
 
 storiesOf('AlarmList', module)
-  .add('UI with mocked data', () => (
+  .add('with no alarms', () => (
     <AlarmList />
-  ));
+  ))
+  .add('with two alarms', () => (
+    <AlarmList alarms={['8:00', '15:50']} />
+  ))
+  .add('with five alarms', () => {
+    const alarms = ['8:00', '9:00', '10:00', '11:00', '12:00'];
+    return <AlarmList alarms={alarms} />
+  });
 
 storiesOf('About', module)
   .add('page with static texts', () => (
