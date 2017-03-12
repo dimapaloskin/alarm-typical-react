@@ -1,10 +1,9 @@
 import React from 'react';
 
-const AlarmList = () => {
+const AlarmList = ({ alarms }) => {
   return (
     <ul>
-      <li>8:00</li>
-      <li>15:50</li>
+      {alarms.map(alarm => <li>{alarm}</li>)}
     </ul>
   );
 };
