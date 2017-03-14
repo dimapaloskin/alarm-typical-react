@@ -8,8 +8,9 @@
     "react-router-dom": "^4.0.0"
   },
   "devDependencies": {
+    "@kadira/storybook": "^2.21.0",
     "react-scripts": "0.9.5",
-    "@kadira/storybook": "^2.21.0"
+    "storyshots": "^3.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
