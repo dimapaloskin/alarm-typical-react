@@ -6,6 +6,13 @@ exports[`Storyshots About page with static texts 1`] = `
 </section>
 `;
 
+exports[`Storyshots AddAlarmButton  1`] = `
+<button
+  onClick={[Function]}>
+  Add another alarm
+</button>
+`;
+
 exports[`Storyshots AlarmList with five alarms 1`] = `
 <ul>
   <li>

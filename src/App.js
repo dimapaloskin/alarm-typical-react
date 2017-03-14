@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 
 import AlarmsPage from './containers/AlarmsPage';
+import GlobalAddAlarm from './containers/GlobalAddAlarm';
 import About from './components/About';
 import './App.css';
 
@@ -24,7 +25,7 @@ class App extends Component {
           <Route exact path="/" component={AlarmsPage} />
           <Route path="/about" component={About} />
 
-          <button>Add another alarm</button>
+          <GlobalAddAlarm />
         </div>
       </Router>
     );

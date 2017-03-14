@@ -5,6 +5,7 @@ import { storiesOf, action, linkTo } from '@kadira/storybook';
 import Button from './Button';
 import Welcome from './Welcome';
 import AlarmList from '../components/AlarmList';
+import AddAlarmButton from '../components/AddAlarmButton';
 import About from '../components/About';
 
 storiesOf('Welcome', module)
@@ -36,6 +37,9 @@ storiesOf('AlarmList', module)
     const alarms = ['8:00', '9:00', '10:00', '11:00', '12:00'];
     return <AlarmList alarms={alarms.map(time => ({ name: time, time }))} />
   });
+
+storiesOf('AddAlarmButton', module)
+  .add('', () => (<AddAlarmButton onClick={action('clicked')} />));
 
 storiesOf('About', module)
   .add('page with static texts', () => (
