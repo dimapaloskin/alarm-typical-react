@@ -3,7 +3,10 @@
 import React from 'react';
 
 type Props = {
-  alarms: Array<string>;
+  alarms: Array<{
+    name: string;
+    time: string;
+  }>;
 };
 
 const AlarmList = ({ alarms }: Props) => {
@@ -13,7 +16,7 @@ const AlarmList = ({ alarms }: Props) => {
 
   return (
     <ul>
-      {alarms.map(alarm => <li key={alarm}>{alarm}</li>)}
+      {alarms.map((alarm, i) => <li key={i}>{alarm.name}: {alarm.time}</li>)}
     </ul>
   );
 };

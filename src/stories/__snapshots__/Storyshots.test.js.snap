@@ -10,17 +10,27 @@ exports[`Storyshots AlarmList with five alarms 1`] = `
 <ul>
   <li>
     8:00
+    : 
+    8:00
   </li>
   <li>
+    9:00
+    : 
     9:00
   </li>
   <li>
     10:00
+    : 
+    10:00
   </li>
   <li>
     11:00
+    : 
+    11:00
   </li>
   <li>
+    12:00
+    : 
     12:00
   </li>
 </ul>
@@ -35,9 +45,13 @@ exports[`Storyshots AlarmList with no alarms 1`] = `
 exports[`Storyshots AlarmList with two alarms 1`] = `
 <ul>
   <li>
+    Wake up!
+    : 
     8:00
   </li>
   <li>
+    Call in 10 minutes
+    : 
     15:50
   </li>
 </ul>

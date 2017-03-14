@@ -24,12 +24,17 @@ storiesOf('AlarmList', module)
   .add('with no alarms', () => (
     <AlarmList alarms={[]} />
   ))
-  .add('with two alarms', () => (
-    <AlarmList alarms={['8:00', '15:50']} />
-  ))
+  .add('with two alarms', () => {
+    const alarms = [
+      { name: 'Wake up!', time: '8:00' },
+      { name: 'Call in 10 minutes', time: '15:50' },
+    ];
+
+    return <AlarmList alarms={alarms} />;
+  })
   .add('with five alarms', () => {
     const alarms = ['8:00', '9:00', '10:00', '11:00', '12:00'];
-    return <AlarmList alarms={alarms} />
+    return <AlarmList alarms={alarms.map(time => ({ name: time, time }))} />
   });
 
 storiesOf('About', module)
