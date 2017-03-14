@@ -23,6 +23,8 @@ class App extends Component {
 
           <Route exact path="/" component={AlarmsPage} />
           <Route path="/about" component={About} />
+
+          <button>Add another alarm</button>
         </div>
       </Router>
     );
