@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import { storiesOf, action, linkTo } from '@kadira/storybook';
 import Button from './Button';
@@ -20,7 +22,7 @@ storiesOf('Button', module)
 
 storiesOf('AlarmList', module)
   .add('with no alarms', () => (
-    <AlarmList />
+    <AlarmList alarms={[]} />
   ))
   .add('with two alarms', () => (
     <AlarmList alarms={['8:00', '15:50']} />

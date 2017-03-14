@@ -1,6 +1,12 @@
+// @flow
+
 import React from 'react';
 
-const AlarmList = ({ alarms = [] }) => {
+type Props = {
+  alarms: Array<string>;
+};
+
+const AlarmList = ({ alarms }: Props) => {
   if (alarms.length === 0) {
     return <p>No alarms set</p>;
   }
