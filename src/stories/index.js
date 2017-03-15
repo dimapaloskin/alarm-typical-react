@@ -4,6 +4,7 @@ import React from 'react';
 import { storiesOf, action, linkTo } from '@kadira/storybook';
 import Button from './Button';
 import Welcome from './Welcome';
+import AlarmForm from '../components/AlarmForm';
 import AlarmList from '../components/AlarmList';
 import AddAlarmButton from '../components/AddAlarmButton';
 import About from '../components/About';
@@ -19,6 +20,11 @@ storiesOf('Button', module)
   ))
   .add('with some emoji', () => (
     <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>
+  ));
+
+storiesOf('AlarmForm', module)
+  .add('empty form', () => (
+    <AlarmForm onSubmit={action('submit')} />
   ));
 
 storiesOf('AlarmList', module)

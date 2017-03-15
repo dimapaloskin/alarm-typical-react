@@ -23,6 +23,13 @@ exports[`Storyshots AddAlarmButton with default text 1`] = `
 </button>
 `;
 
+exports[`Storyshots AlarmForm empty form 1`] = `
+<form
+  onSubmit={[Function]}>
+  <input />
+</form>
+`;
+
 exports[`Storyshots AlarmList when adding first alarm 1`] = `
 <ul>
   <li>
