@@ -34,7 +34,9 @@ class App extends Component {
 
           <hr/>
 
-          <Route exact path="/" component={MyAlarms} />
+          <Route exact path="/" render={() => (
+            <MyAlarms adding={this.state.adding} />
+          )} />
           <Route path="/about" component={About} />
 
           <GlobalAddAlarm onClick={this.toggleAddingMode} />

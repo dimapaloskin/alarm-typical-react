@@ -13,4 +13,10 @@ function addAlarm(alarm: Alarm) {
 
 }
 
-export default () => <AlarmList alarms={mockAlarms} addAlarm={addAlarm} />;
+type Props = {
+  adding?: boolean;
+};
+
+export default ({ adding }: Props) => (
+  <AlarmList alarms={mockAlarms} addAlarm={addAlarm} adding={adding} />
+);
