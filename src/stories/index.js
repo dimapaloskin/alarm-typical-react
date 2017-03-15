@@ -25,13 +25,16 @@ storiesOf('AlarmList', module)
   .add('with no alarms', () => (
     <AlarmList alarms={[]} />
   ))
-  .add('with two alarms', () => {
+  .add('when adding first alarm', () => (
+    <AlarmList alarms={[]} adding={true} />
+  ))
+  .add('when adding third alarm', () => {
     const alarms = [
       { name: 'Wake up!', time: '8:00' },
       { name: 'Call in 10 minutes', time: '15:50' },
     ];
 
-    return <AlarmList alarms={alarms} />;
+    return <AlarmList alarms={alarms} adding={true} />;
   })
   .add('with five alarms', () => {
     const alarms = ['8:00', '9:00', '10:00', '11:00', '12:00'];

@@ -23,6 +23,32 @@ exports[`Storyshots AddAlarmButton with default text 1`] = `
 </button>
 `;
 
+exports[`Storyshots AlarmList when adding first alarm 1`] = `
+<ul>
+  <li>
+    <input />
+  </li>
+</ul>
+`;
+
+exports[`Storyshots AlarmList when adding third alarm 1`] = `
+<ul>
+  <li>
+    Wake up!
+    : 
+    8:00
+  </li>
+  <li>
+    Call in 10 minutes
+    : 
+    15:50
+  </li>
+  <li>
+    <input />
+  </li>
+</ul>
+`;
+
 exports[`Storyshots AlarmList with five alarms 1`] = `
 <ul>
   <li>
@@ -57,21 +83,6 @@ exports[`Storyshots AlarmList with no alarms 1`] = `
 <p>
   No alarms set
 </p>
-`;
-
-exports[`Storyshots AlarmList with two alarms 1`] = `
-<ul>
-  <li>
-    Wake up!
-    : 
-    8:00
-  </li>
-  <li>
-    Call in 10 minutes
-    : 
-    15:50
-  </li>
-</ul>
 `;
 
 exports[`Storyshots Button with some emoji 1`] = `
