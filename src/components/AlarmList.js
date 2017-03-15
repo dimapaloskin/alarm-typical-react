@@ -1,12 +1,10 @@
 // @flow
 
 import React from 'react';
+import type { Alarm } from '../actions';
 
 type Props = {
-  alarms: Array<{
-    name: string;
-    time: string;
-  }>;
+  alarms: Array<Alarm>;
 };
 
 const AlarmList = ({ alarms }: Props) => {
