@@ -6,9 +6,19 @@ exports[`Storyshots About page with static texts 1`] = `
 </section>
 `;
 
-exports[`Storyshots AddAlarmButton  1`] = `
+exports[`Storyshots AddAlarmButton with default text 1`] = `
 <button
-  onClick={[Function]}>
+  onClick={[Function]}
+  style={
+    Object {
+      "background": "white",
+      "border": "2px solid blue",
+      "borderRadius": "4em",
+      "color": "black",
+      "fontSize": "2em",
+      "padding": "1em",
+    }
+  }>
   Add another alarm
 </button>
 `;

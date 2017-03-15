@@ -39,7 +39,9 @@ storiesOf('AlarmList', module)
   });
 
 storiesOf('AddAlarmButton', module)
-  .add('', () => (<AddAlarmButton onClick={action('clicked')} />));
+  .add('with default text', () => (
+    <AddAlarmButton onClick={action('clicked')} />
+  ));
 
 storiesOf('About', module)
   .add('page with static texts', () => (
