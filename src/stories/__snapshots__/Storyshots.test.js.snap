@@ -26,7 +26,10 @@ exports[`Storyshots AddAlarmButton with default text 1`] = `
 exports[`Storyshots AlarmForm empty form 1`] = `
 <form
   onSubmit={[Function]}>
-  <input />
+  <input
+    placeholder="name" />
+  <input
+    placeholder="time" />
 </form>
 `;
 

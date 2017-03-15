@@ -14,7 +14,8 @@ const handleSubmitEvent = (onSubmit) => (event) => {
 const AlarmForm = ({ onSubmit }: Props) => {
   return (
     <form onSubmit={handleSubmitEvent(onSubmit)}>
-      <input />
+      <input placeholder="name" />
+      <input placeholder="time" />
     </form>
   );
 };
