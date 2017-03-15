@@ -2,9 +2,9 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AlarmsPage from './AlarmsPage';
+import MyAlarms from './MyAlarms';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<AlarmsPage />, div);
+  ReactDOM.render(<MyAlarms />, div);
 });
