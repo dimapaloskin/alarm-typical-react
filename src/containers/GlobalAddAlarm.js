@@ -3,4 +3,8 @@
 import React from 'react';
 import AddAlarmButton from '../components/AddAlarmButton';
 
-export default () => <AddAlarmButton onClick={() => {}} />;
+type Props = {
+  onClick: () => void;
+};
+
+export default ({ onClick }: Props) => <AddAlarmButton onClick={onClick} />;

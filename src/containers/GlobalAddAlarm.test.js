@@ -6,5 +6,5 @@ import GlobalAddAlarm from './GlobalAddAlarm';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<GlobalAddAlarm />, div);
+  ReactDOM.render(<GlobalAddAlarm onClick={() => {}} />, div);
 });

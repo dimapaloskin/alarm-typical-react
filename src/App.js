@@ -13,6 +13,16 @@ import About from './components/About';
 import './App.css';
 
 class App extends Component {
+  state = {
+    adding: false,
+  };
+
+  toggleAddingMode = () => {
+    this.setState(state => ({
+      adding: !state.adding,
+    }));
+  }
+
   render() {
     return (
       <Router>
@@ -27,7 +37,7 @@ class App extends Component {
           <Route exact path="/" component={MyAlarms} />
           <Route path="/about" component={About} />
 
-          <GlobalAddAlarm />
+          <GlobalAddAlarm onClick={this.toggleAddingMode} />
         </div>
       </Router>
     );
